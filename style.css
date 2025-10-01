@@ -94,21 +94,7 @@ ul {
   }
 }
 
-@media (max-width: 768px){
-  .nav-links{
-    display:none;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-  .nav-links.active{
-    display: flex;
-  }
-  .menu-toggle{
-    display: block;
-    cursor: pointer;
-  }
-}
+
 @media (max-width: 600px){
   h2{
     font-size: 1.4rem;
@@ -175,6 +161,19 @@ ul {
   }
   .person-image {
     order: 2;
+  }
+  .nav-links{
+    display:none;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .nav-links.active{
+    display: flex;
+  }
+  .menu-toggle{
+    display: block;
+    cursor: pointer;
   }
 }
 
