@@ -1,0 +1,167 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #fdf8f2;
+  color: #222;
+  line-height: 35px; /* Erhöht den Zeichenabstand um 5 Pixel */
+}
+header {
+  position: fixed;
+  width: 100%;
+  background: #f8f1e9;
+  border-bottom: 1px solid #e6ddd3;
+  z-index: 1000;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  font-weight: 500;
+}
+nav a {
+  color: #800000;
+  text-decoration: none;
+}
+section {
+  padding: 100px 20px 60px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.hero {
+  background: #fdf8f2;
+  text-align: center;
+  padding-top: 160px;
+}
+.hero blockquote {
+  font-size: 1.6em;
+  color: #800000;
+  margin: 0;
+}
+.hero p {
+  margin-top: 1em;
+  font-size: 1.1em;
+}
+.btn {
+  display: inline-block;
+  margin-top: 2em;
+  padding: 0.8em 1.5em;
+  background: #800000;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+h2 {
+  color: #800000;
+  border-bottom: 2px solid #80000033;
+  padding-bottom: 0.3em;
+  margin-top: 0;
+}
+ul {
+  padding-left: 1.2em;
+}
+.section-two-column {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+@media (min-width: 768px) {
+  .section-two-column {
+    flex-direction: row;
+  }
+  .section-two-column > div {
+    width: 50%;
+  }
+}
+.mediation-image {
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 600px; /* maximale Breite des Bildblocks */
+}
+
+.mediation-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #ddd; /* dezenter Rahmen */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* leichte Schattenwirkung */
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 1em;
+  max-width: 120px;
+}
+.person {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.person-text {
+  flex: 2;
+}
+
+.person-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.portrait {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #e6ddd3;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .person {
+    flex-direction: column;
+    text-align: center;
+  }
+  .person-text {
+    order: 1;
+  }
+  .person-image {
+    order: 2;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.9em;
+  background: #f8f1e9;
+  color: #444;
+  border-top: 1px solid #e6ddd3;
+}
+
+.footer-link {
+  color: inherit;         /* übernimmt die Footer-Schriftfarbe */
+  text-decoration: none;  /* entfernt die Unterstreichung */
+  font-weight: 500;       /* macht es etwas deutlicher, ohne Link-Optik */
+}
+
+.footer-link:hover {
+  text-decoration: underline; /* dezente Hervorhebung beim Hovern */
+}
+
+.mail-link {
+  color: #800000;        /* gleiche Akzentfarbe wie Überschriften */
+  text-decoration: none; /* keine Unterstreichung */
+  font-weight: 500;
+}
+
+.mail-link:hover {
+  text-decoration: underline; /* dezenter Hover-Effekt */
+}
