@@ -28,10 +28,25 @@ nav {
 }
 .navbar{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 1rem;
+  gap: 1rem;
 }
+/* Desktop: Nav-Links schön mittig mit mehr Abstand */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;  /* mehr Abstand zwischen den Links */
+}
+/* Standard: Logo im mobilen Menü nicht sichtbar */
+.mobile-logo {
+  display: none;
+  font-weight: 600;
+  color: #800000;
+  font-size: 1.2rem;
+}
+
 .menu-toggle{
   display: none;
   font-size: 2rem;
@@ -165,6 +180,7 @@ ul {
   .nav-links{
     display:none;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
     margin-top: 1rem;
   }
@@ -174,6 +190,9 @@ ul {
   .menu-toggle{
     display: block;
     cursor: pointer;
+  }
+  .mobile-logo{
+    display: block;
   }
 }
 
