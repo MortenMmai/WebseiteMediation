@@ -50,7 +50,8 @@ nav {
 .menu-toggle{
   display: none;
   font-size: 2rem;
-  background: #800000;
+  background: none;
+  color: #800000;
   border: none;
 }
 nav a {
