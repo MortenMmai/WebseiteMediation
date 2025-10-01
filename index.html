@@ -153,17 +153,20 @@
     <p>&copy; 2025 Maja Mai | <a href="impressum.html" class="footer-link">Impressum</a></p>
   </footer>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+  
+      toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    });
+  </script>
+
+
 </body>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.querySelector(".menu-toggle");
-    const navLinks = document.querySelector(".nav-links");
 
-    toggle.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-  });
-</script>
 
 </html>
