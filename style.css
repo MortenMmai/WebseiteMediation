@@ -243,6 +243,9 @@ footer {
   text-decoration: none; /* keine Unterstreichung */
   font-weight: 500;
 }
+.phone{
+  color: #800000;
+}
 
 .mail-link:hover {
   text-decoration: underline; /* dezenter Hover-Effekt */
