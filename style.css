@@ -179,24 +179,46 @@ ul {
     order: 2;
   }
   .nav-links{
-    display:none;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     margin-top: 1rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 70%;
+    background: #fdf8f2;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
   }
   .nav-links.active{
-    display: flex;
+    transform: translateX(0);
   }
   .menu-toggle{
     display: block;
     cursor: pointer;
+    z-index: 1000;
   }
   .mobile-logo{
     display: block;
   }
 }
-
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  z-index: 998;
+}
+.overlay.active{
+  display: block;
+}
 footer {
   text-align: center;
   padding: 40px 20px;
