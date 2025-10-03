@@ -134,5 +134,25 @@
     <p>&copy; 2025 Maja Mai | <a href="impressum.html" class="footer-link">Impressum</a></p>
   </footer>
 
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+      const overlay = document.querySelector(".overlay");
+
+      toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        overlay.classList.toggle("active");
+      });
+
+    // Menü schließen, wenn man auf Overlay klickt
+      overlay.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+        overlay.classList.remove("active");
+      });
+    });
+  </script>
+  
 </body>
 </html>
